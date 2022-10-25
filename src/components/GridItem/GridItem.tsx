@@ -9,7 +9,7 @@ interface MediaObj {
 const GridItem = (prop: MediaObj) => {
   return (
     <div className={s.grid_item}>
-      <img src={prop.url} />
+      <img src={prop.url} className={s.item_image} />
       <p>{prop.description}</p>
     </div>
   );
